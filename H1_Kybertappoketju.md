@@ -148,3 +148,18 @@ HOP RTT     ADDRESS
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 242.57 seconds
 ```
+Todella hyvien tapojen mukaan, laitoin skannauksen tulokset ChatGPT:hen promptina, koska maalikolla oli liikaa tietoa edessää.
+Vastaukseksi sain, että portit 21/tcp, 1524/tcp ja 3306/tcp ovat kiinnostavimpia portteja.
+
+#### 21/tcp 
+- Käytössä on vsftpd 2.3.4, joka on tunnettu takaovesta, hyökkääjä voi päästä tämän avulla portille 6200 ja saada root-käyttäjän.
+- Nopeasti googlen avulla löytyi heti muutama Backdoor Command Execution.
+
+#### 1524/tcp
+- Mahdollinen pääsy suoraan root-shelliin.
+- Tahallisesti jätetty takaovi
+- Netcatilla voi saada root-käyttöoikeudet heti
+
+#### 3306/tcp
+- Vanha MySQL-versio
+- Todennäköisesti haavoittuvainen vanhuudensa takia.
