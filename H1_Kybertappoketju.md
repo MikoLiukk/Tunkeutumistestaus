@@ -13,8 +13,8 @@ https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
 https://www.youtube.com/watch?v=_aVzQ_qEfhc
 
 ## h) Porttiskannaa Metasploitable huolellisesti ja kaikki portit (nmap -A -T4 -p-). Poimi 2-3 hyökkääjälle kiinnostavinta porttia. Analysoi ja selitä tulokset näiden porttien osalta.
-Komennolla ´´´nmap -A -T4 -p- 192.168.67.4´´´ sain tehtyä porttiskannauksen.
-´´´
+Komennolla ```nmap -A -T4 -p- 192.168.67.4``` sain tehtyä porttiskannauksen.
+```
 Starting Nmap 7.95 ( https://nmap.org ) at 2025-04-01 20:09 EEST
 Nmap scan report for 192.168.67.4
 Host is up (0.0088s latency).
@@ -147,4 +147,4 @@ HOP RTT     ADDRESS
 
 OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 242.57 seconds
-´´´
+```
