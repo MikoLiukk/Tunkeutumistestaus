@@ -5,12 +5,22 @@
 Hain kuvan Kalille kali.org sivulta. https://www.kali.org/get-kali/#kali-installer-images
 https://www.kali.org/docs/general-use/kali-linux-sources-list-repositories/
 
-
-
-
-
+## b) Irrota Kali-virtuaalikone verkosta
+Irrotin koneen netistä oikealta yläkulmasta ja testasin komennot ```ping 1.1.1.1``` ja ```ping 8.8.8.8```
+![Näyttökuva 2025-04-01 153422](https://github.com/user-attachments/assets/3e699d0a-5e00-47c6-9e73-629104c156f0)
+Virtuaalikone ei ollut netissä
 
 https://www.youtube.com/watch?v=_aVzQ_qEfhc
+
+## c) Porttiskannaa 1000 tavallisinta tcp-porttia omasta koneestasi (nmap -T4 -A localhost). Selitä komennon paramterit. Analysoi ja selitä tulokset. 
+Komennolla ```nmap -T4 -A localhost```sain porttiskannattua virtuaalikoneen.
+
+![Näyttökuva 2025-04-01 155713](https://github.com/user-attachments/assets/965cf977-c9b9-499f-96a1-3aac089e020f)
+
+Koska virtuaalikone ei ollut netissä, 1000 porttia oli closed tilassa. DNS-palvelimia ei myöskään löytynyt.
+
+## d) Asenna kaksi vapaavalintaista demonia ja skannaa uudelleen. Analysoi ja selitä erot.
+Edellisen Linux-palvelimet kurssin ansiosta (https://github.com/MikoLiukk/Linux-Palvelimet-2025) minulle kaksi tutuinta demonia on Apache2 ja Openssh.
 
 ## h) Porttiskannaa Metasploitable huolellisesti ja kaikki portit (nmap -A -T4 -p-). Poimi 2-3 hyökkääjälle kiinnostavinta porttia. Analysoi ja selitä tulokset näiden porttien osalta.
 Komennolla ```nmap -A -T4 -p- 192.168.67.4``` sain tehtyä porttiskannauksen.
