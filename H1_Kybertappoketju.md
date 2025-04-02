@@ -22,6 +22,52 @@ Koska virtuaalikone ei ollut netissä, 1000 porttia oli closed tilassa. DNS-palv
 ## d) Asenna kaksi vapaavalintaista demonia ja skannaa uudelleen. Analysoi ja selitä erot.
 Edellisen Linux-palvelimet kurssin ansiosta (https://github.com/MikoLiukk/Linux-Palvelimet-2025) minulle kaksi tutuinta demonia on Apache2 ja Openssh.
 
+Asensin demonir roottina komennoilla ```sudo apt-get install -y apache2``` ja ```sudo apt-get install -y openssh-server```.
+Demonit käynnistin komennoilla ```sudo systemctl start apache2``` ja ```sudo systemctl start ssh```.
+Demonien tilan tarkistuksen sai komennoilla ```systemctl status apache2``` ja ```systemctl status ssh```.
+
+![Näyttökuva 2025-04-01 161102](https://github.com/user-attachments/assets/1c8736b6-6c06-41ff-bb40-88d5551f2a08)
+
+![Näyttökuva 2025-04-01 161151](https://github.com/user-attachments/assets/d5dbd001-be9b-4873-bbbb-d002a9752de1)
+
+Lopuksi irrotin kalin netistä ja porttiskannasin uudelleen.
+
+![Näyttökuva 2025-04-01 161330](https://github.com/user-attachments/assets/c4f49897-308f-4959-b8e8-ffadf8cf10b5)
+
+Suurin ero oli SSH-hostkeys (22/tcp) ja Apache2 (80/tcp).
+
+## e) Asenna Metasploitable 2 virtuaalikoneeseen
+Latasin Metasploitable 2 verkosta osoitteesta https://sourceforge.net/projects/metasploitable/files/Metasploitable2/metasploitable-linux-2.0.0.zip/download. Tämän jälkeen zip-tiedosto piti purkaa omaan kansioonsa.
+VirtualBoxissa loin uuden virtuaalitietokoneen, ainoat huomioitavat erot esimerkiksi Ubuntun asentamisen kanssa oli, että pitää valita subtype: other linux, version: other linux (64-bit) ja hard drive:ssa pitää valita jo valmis kovalely, mikä on aikaisemmin purettu metasploitable.vmdk.
+
+## f) Host-only virtuaaliverkko VirtualBoxissa
+Menin virtualboxin ylävalikosta File -> Tools -> Network Manager
+Jouduin luomaan uuden host-only adapterin. 
+
+![Näyttökuva 2025-04-01 162607](https://github.com/user-attachments/assets/8016652c-a9e2-4e95-beb5-2c23e092280b)
+
+Uusi adapteri tämän jälkeen lisättiin kalille ja metasploitille. 
+
+![Näyttökuva 2025-04-01 163010](https://github.com/user-attachments/assets/0b620f7d-27e7-4ff6-ae30-a7848402c40a)
+
+Kun yritin käynnistää virtuaalitietokoneet uudelleen tuli minulle vastaan Linux-kurssilta tuttu virhekoodi E_FAIL (0x80004005)
+Sain korjattua tämän sammuttamalla oman tietokoneeni hypervisorlaunchin ja käynnistämällä tietokoneeni uudelleen.
+
+![Näyttökuva 2025-04-01 163555](https://github.com/user-attachments/assets/a511ee0f-aa0b-4dfd-b9c5-4e17e88995c2)
+
+Tämän jälkeen virtuaalikoneiden käynnistys onnistui.
+
+Käynnistin ensimmäisenä metasploitablen ja kirjauduin sisään (msfadmin:msfadmin). 
+Tarkistin, että metasploitable ei ole verkossa komennolla ```ping 1.1.1.1```, tämän jälkeen komennolla ```ifconfig``` löysin vielä 192.168.67.4 ip-osoitteen.
+
+![Näyttökuva 2025-04-01 200839](https://github.com/user-attachments/assets/500b6cdb-adb0-41fa-8228-3da7ba43cf4c)
+
+Tämän jälkeen avasin kalin ja tarkisin, että se ei ole verkossa ```ping 1.1.1.1```.
+![Uploading Näyttökuva 2025-04-01 200758.png…]()
+
+
+![Näyttökuva 2025-04-01 200839](https://github.com/user-attachments/assets/79fd059a-e57d-4563-a43b-9dfe4d8f2641)
+
 ## h) Porttiskannaa Metasploitable huolellisesti ja kaikki portit (nmap -A -T4 -p-). Poimi 2-3 hyökkääjälle kiinnostavinta porttia. Analysoi ja selitä tulokset näiden porttien osalta.
 Komennolla ```nmap -A -T4 -p- 192.168.67.4``` sain tehtyä porttiskannauksen.
 ```
