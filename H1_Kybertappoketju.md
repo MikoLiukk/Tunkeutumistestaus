@@ -10,7 +10,6 @@ Irrotin koneen netistä oikealta yläkulmasta ja testasin komennot ```ping 1.1.1
 ![Näyttökuva 2025-04-01 153422](https://github.com/user-attachments/assets/3e699d0a-5e00-47c6-9e73-629104c156f0)
 Virtuaalikone ei ollut netissä
 
-https://www.youtube.com/watch?v=_aVzQ_qEfhc
 
 ## c) Porttiskannaa 1000 tavallisinta tcp-porttia omasta koneestasi (nmap -T4 -A localhost). Selitä komennon paramterit. Analysoi ja selitä tulokset. 
 Komennolla ```nmap -T4 -A localhost```sain porttiskannattua virtuaalikoneen.
@@ -223,3 +222,20 @@ Vastaukseksi sain, että portit 21/tcp, 1524/tcp ja 3306/tcp ovat kiinnostavimpi
 #### 3306/tcp
 - Vanha MySQL-versio
 - Todennäköisesti haavoittuvainen vanhuudensa takia.
+
+
+## Lähteet:
+https://terokarvinen.com/tunkeutumistestaus/
+
+https://open.spotify.com/show/0aIOiWdD5TCTHurBjCq08Q
+
+https://lockheedmartin.com/content/dam/lockheed-martin/rms/documents/cyber/LM-White-Paper-Intel-Driven-Defense.pdf
+
+https://learning.oreilly.com/videos/the-art-of/9780135767849/9780135767849-SPTT_04_00/
+
+https://finlex.fi/fi/oikeuskaytanto/korkein-oikeus/ennakkopaatokset/2003/36
+
+https://chatgpt.com/
+
+https://www.rapid7.com/db/modules/exploit/unix/ftp/vsftpd_234_backdoor/
+
