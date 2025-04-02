@@ -63,10 +63,14 @@ Tarkistin, että metasploitable ei ole verkossa komennolla ```ping 1.1.1.1```, t
 ![Näyttökuva 2025-04-01 200839](https://github.com/user-attachments/assets/500b6cdb-adb0-41fa-8228-3da7ba43cf4c)
 
 Tämän jälkeen avasin kalin ja tarkisin, että se ei ole verkossa ```ping 1.1.1.1```.
-![Uploading Näyttökuva 2025-04-01 200758.png…]()
+```nmap -sn 192.168.67.4``` löytyi halutusti metasploitable.
 
+![Näyttökuva 2025-04-01 200758](https://github.com/user-attachments/assets/c05043e3-3fde-4765-aea1-a54708f838b7)
 
-![Näyttökuva 2025-04-01 200839](https://github.com/user-attachments/assets/79fd059a-e57d-4563-a43b-9dfe4d8f2641)
+Varmistin tämän curlaamalla osoitteen ```curl 192.168.67.4```. 
+
+![Näyttökuva 2025-04-01 200820](https://github.com/user-attachments/assets/19f7bc43-1c7a-4582-9177-03a43a791a81)
+
 
 ## h) Porttiskannaa Metasploitable huolellisesti ja kaikki portit (nmap -A -T4 -p-). Poimi 2-3 hyökkääjälle kiinnostavinta porttia. Analysoi ja selitä tulokset näiden porttien osalta.
 Komennolla ```nmap -A -T4 -p- 192.168.67.4``` sain tehtyä porttiskannauksen.
