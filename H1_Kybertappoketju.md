@@ -253,3 +253,4 @@ https://chatgpt.com/
 
 https://www.rapid7.com/db/modules/exploit/unix/ftp/vsftpd_234_backdoor/
 
+https://open.spotify.com/episode/4pwlgyA8V4kA8Huin8bIPx
