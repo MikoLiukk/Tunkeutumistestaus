@@ -1,5 +1,19 @@
 # H1 Kybertappoketju
 ## x) Lue/katso/kuuntele ja tiivistä.
+Kuuntelin Herrasmieshakkereiden jakson numero 15, vieraan a Joona "natu" Leppänen.
+-  Jakso on vuodelta 2021, jaksossa pintaraapaistiin sen hetkistä e-urheilua ja miten corona vaikuttaa alaan.
+-  Jaksossa myös pintaraapaistiin erillaisia huijjauksia mitä peleissä (pääasiallisesti Counter-Strike) on tullut ilmi ja miten näiltä eri turnausjärjestäjät ja pelintekijät yrittävät suojautua.
+
+Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains
+- Tappoketju on systemaattinen prosessi kohdistaa ja hyökätä vastapuolelle saadakseen aikaan halutun vaikutuksen.
+- Verkkohyökkäyksen voi jakaa tiedosteluun, aseistukseen. toimittamiseen, hyödyntämiseen. asentamiseen, käskemiseen ja hallitsemiseen ja toimimiseen kohteessa.
+
+The Art of Hacking: 4.3 Surveying Essential Tools for Active Reconnaissance
+- Porttiskannaus työkalut, Web-applikaatioiden priorisointi työkalut, Verkkohaavoittuvuuksien skannaus ja Webhaavoittovuuksien skannaus
+
+KKO 2003:36
+- A oli tehnyt porttiskannauksen OPK osuuskunnan tietojärjestelmään ilman lupaa, mutta ei läpäissyt palomuuria.
+- Hovioikeus katsoi, että A oli syyllistynyt tietomurron yritykseen, korkein oikeus ylläpiti hovioikeuden päätöksen.
 
 ## a) Asenna Kali virtuaalikoneeseen.
 Hain kuvan Kalille kali.org sivulta. https://www.kali.org/get-kali/#kali-installer-images
