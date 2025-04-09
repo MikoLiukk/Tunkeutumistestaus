@@ -6,3 +6,5 @@ Zaproxyn lataaminen onnistui komennolla ```sudo apt install zaproxy```.
 Latauksen jälkeen avattiin ZAP.
 
 ![Näyttökuva 2025-04-07 180434](https://github.com/user-attachments/assets/829321db-abc7-43dd-bd1f-d5b49225db89)
+
+![Näyttökuva 2025-04-07 180434](https://github.com/user-attachments/assets/22f98512-6917-4cff-bdc8-1249f6813fb1)
