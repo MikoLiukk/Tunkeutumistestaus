@@ -51,4 +51,45 @@ Tehtävä oli hyvin samantapainen kuin ensimmäisen, suurin ero oli, että täll
 Tehtävissä tarkoitus on päästä käsiksi /etc/passwd tiedostoon. Tehtävät toimii koska selain/verkkosovellus ei rajoita käyttäjän syötettä, joten selain/verkkosovellus liittää sen suoraan tieodostopolkuun. Tulevissa tehtävissä tarvitsee ZAP:ia tai vastaavaa välimies proxya.
 
 ### e) File path traversal, simple case (https://portswigger.net/web-security/file-path-traversal/lab-simple)
+Ensimmäinen onnistui, kun tajusi, että url rivillä product?product=* muuttui eri tuotteiden välillä. Oikean tuloksen sai kun url kenttään kirjoitti 
+```/image?filename=../../../etc/passwd```.
+
+ZAP:iss response headerin alla oli "salasanat"
+
+![Näyttökuva 2025-04-08 212743](https://github.com/user-attachments/assets/69378d08-50b9-409b-afb3-4b008490c905)
+
+![Näyttökuva 2025-04-09 0931231](https://github.com/user-attachments/assets/891a5a69-6810-4b1c-9fd5-62ed6028e803)
+
+### f) File path traversal, traversal sequences blocked with absolute path bypass
+(https://portswigger.net/web-security/file-path-traversal/lab-absolute-path-bypass)
+
+Tehtävä oli todella samantapainen kuin edellinen, ero tehtävissä oli, että tässä tehtävässä "salasanat" saatiin suoralla tiedostopolulla. Lopullinen vastaus oli
+```image?filename=/etc/passwd```
+
+![Näyttökuva 2025-04-09 093431](https://github.com/user-attachments/assets/c36d7a9a-a72b-4712-9709-0f1bc31e941d)
+
+### g) File path traversal, traversal sequences stripped non-recursively (https://portswigger.net/web-security/file-path-traversal/lab-sequences-stripped-non-recursively)
+Tehtävän avain oli tajuta, että verkkosovellus poistaa ```../``` merkkijonot syötteestä, mutta ei huomioi muita versioita. 
+Eli sovellus tulkitsee merkkijonon ```....//``` --> ```../```. 
+Tehtävän vastaus oli:
+```image?filename=....//....//....//etc/passwd```
+
+![Näyttökuva 2025-04-09 093644](https://github.com/user-attachments/assets/fba1736a-f1bd-4598-ad2d-fff5095855b5)
+
+## Insecure Direct Object Reference (IDOR) 
+Tehtävässä oli tarkoitus saada ladattua edellinen chat-keskustelu, jossa carlos-käyttäjän salasana on. Tehtävä toimii, koska keskustelut tallennetaan palvelimelle tiedostoina ja tiedostot sisältävät kasvavan numeron.
+### h) Insecure direct object references (https://portswigger.net/web-security/access-control/lab-insecure-direct-object-references)
+Tehtävän avain on, kun painaa "View transcript" nappia ja huomaa, että palvelin lataa 2.txt tiedoston. ZAP:issa voi tehdä requestin requester tabissa. Kun muokkaa GET pyyntöä ja vaihtaa lataus tiedostoksi 2.txt --> 1.txt todennäköisesti ensimmäinen chatlogi latautuu. Tällä kertaa tiedostossa oli Carloksen salasanan. Tämän jälkeen oli helppoa kirjautua Carloksen käyttäjälle.
+
+![Näyttökuva 2025-04-08 220038](https://github.com/user-attachments/assets/6f20518b-1d96-45ab-9e7a-89d5face32f3)
+
+## Server Side Request Forgery (SSRF)
+Tehtävän tarkoitus on poistaa carloksen käyttäjä käyttäen suodattamatonta API kutsua ja http://localhost/admin/.
+### i) Basic SSRF against the local server (https://portswigger.net/web-security/ssrf/lab-basic-ssrf-against-localhost)
+Tehtävässä tarkoitus oli tarkistaa tuotteiden varasto tilanne. POST pyynnöstä löytyi stockApi=, josta ZAP:in request tabin avulla sai muokattua stockApi pyyntöä, jolla sai poistettua Carloksen käyttäjän.
+
+![Näyttökuva 2025-04-08 220909](https://github.com/user-attachments/assets/e40b54c2-9129-4a73-8256-4cde0f10405c)
+
+
+
 
