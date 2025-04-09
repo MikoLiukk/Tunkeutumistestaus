@@ -1,5 +1,37 @@
 # h2 Täysin Laillinen Sertifikaatti
 
+## x) Lue/katso ja tiivistä.
+- Broken Access Control (https://owasp.org/Top10/A01_2021-Broken_Access_Control/)
+  - Virheelliset käyttäjäoikeudet ovat havaittavissa noin 4% tutkituista verkkosovelluksista.
+  - Paras puolustus on pienimmän oikeuden periaate.
+  - API:t ja git hakemistot pitää suojata.
+
+- Server-Side Request Forgery (https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/)
+  - Harvinainen mutta vakava
+  - Verkkosovellus hakee tietoa varmistamatta oikeellisuutta.
+  - Ohittaa monet suojakerrokset
+  - Pienimmän oikeuden periaate
+  - Vain ennalta määritetty liikenne pitää olla sallittu.
+
+- Insecure direct object references (https://portswigger.net/web-security/access-control/idor)
+  - Ohittaa tunnistuksen
+  - Yleensä käytetään oikeuksien nostamiseen.
+  - Muuttaa käyttäjän hallittavia parametrejä, jotka johtavat Back-end pyyntöihin.
+
+- Path traversal (https://portswigger.net/web-security/file-path-traversal)
+  - Komennoilla päästään siirtymään palvelimen kansiorakenteessa.
+  - ../
+  - Tehokkain tapa suojautua on puhdistaa ja tarkistaa asiakkaan syöte.
+
+- Server-side request forgery (https://portswigger.net/web-security/ssrf)
+  - Syötetään verkkopohjiin haitallista koodia.
+  - Hyökkäys tehdään osoitesivulta
+  - Estäminen onnistuu erottamalla logiikka syötteestä.
+
+- Cross-site scripting (https://portswigger.net/web-security/cross-site-scripting)
+   - Ajetaan komentoja odottamattomista sijainneista palvelimelta.
+   - Puolustaminen onnistuu suodattamalla ja suojaamalla käyttäjän komennot.
+  
 
 ## a) Totally Legit Sertificate. Asenna OWASP ZAP, generoi CA-sertifikaatti ja asenna se selaimeesi.
 ## b) Kettumaista. Asenna "FoxyProxy Standard" Firefox Addon, ja lisää ZAP proxyksi siihen
