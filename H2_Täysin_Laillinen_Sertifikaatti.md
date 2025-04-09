@@ -122,6 +122,23 @@ Tehtävässä tarkoitus oli tarkistaa tuotteiden varasto tilanne. POST pyynnöst
 
 ![Näyttökuva 2025-04-08 220909](https://github.com/user-attachments/assets/e40b54c2-9129-4a73-8256-4cde0f10405c)
 
+## Lähteet
+https://terokarvinen.com/tunkeutumistestaus/
 
+https://github.com/lansiri/Tunkeutumistestaus-ici001as3a-3003/blob/main/h5.md#c-insecure-direct-object-references-idor
+
+https://github.com/panupeltola/tunkeutumistestaus/blob/main/Harjoitus%205.md
+
+https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+
+https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/
+
+https://portswigger.net/web-security/access-control/idor
+
+https://portswigger.net/web-security/file-path-traversal
+
+https://portswigger.net/web-security/ssrf
+
+https://portswigger.net/web-security/cross-site-scripting
 
 
