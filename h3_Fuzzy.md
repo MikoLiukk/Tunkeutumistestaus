@@ -9,6 +9,9 @@ https://github.com/ffuf/ffuf/blob/master/README.md
 - Artikkelissa myös fuzzin käyttösivu
 
 ## a) Fuzzzz. Ratkaise dirfuz-1 artikkelista Karvinen 2023
+Ohjeet ffufin käyttöön ja ensimmäiseen fuzzaukseen Terolta (https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/)
+Ohjeissa maalipalvelin ja kuinka tehtävä ratkaistaan.
+
 Ensimmäisellä fuzzauksella huomasin, että kaikki tiedostot olivat 154 kokoisia, joten filtteröin ne pois ```-fs 154```
 
 ![Näyttökuva 2025-04-15 185056](https://github.com/user-attachments/assets/3cfa3c88-35b6-4195-8a90-2acbdc4484e9)
