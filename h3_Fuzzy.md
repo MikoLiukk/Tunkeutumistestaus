@@ -3,6 +3,7 @@
 https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/
 - Artikkelissa paikallinen testipalvelin, joten harjoittelu on turvallista ja laillista.
 - Artikkelissa opetetaan fuzzauksen peruskomentoja ja perusteita.
+
 https://github.com/ffuf/ffuf/blob/master/README.md
 - Fuzzin githubissa käydään läpi työkalun käyttöä ja vinkkejä
 - Artikkelissa myös fuzzin käyttösivu
