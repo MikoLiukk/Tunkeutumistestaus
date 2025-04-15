@@ -62,3 +62,32 @@ Users.log
 
 ## 404 Status
 
+![Näyttökuva 2025-04-15 190829](https://github.com/user-attachments/assets/59f7bf04-9b9a-4c44-aa15-d60a9e53fe76)
+
+Secret löytyi.
+
+## Param Mining
+
+![Näyttökuva 2025-04-15 190909](https://github.com/user-attachments/assets/f4549d66-eec9-4ff7-b333-41b671155f60)
+
+debugin kanssa parameter löytyi.
+
+## Rate Limited
+Tässä tehtävässä jostain syystä jokainen fuzzaus meni virhe tilaan, mutta tehtävän ajatus on, että joillakin sivuilla voi olla rajoituksia maksimi kyselymääriin ja tehtävässä rajoitetaan sitä.
+
+![Näyttökuva 2025-04-15 191456](https://github.com/user-attachments/assets/75a294d5-7cdf-45ba-9169-a54d54f2bcd6)
+
+## Subdomains - Virtual Host Enumeration
+
+![Näyttökuva 2025-04-15 191609](https://github.com/user-attachments/assets/6baa325d-0f99-457d-be5a-e187f929cbd0)
+
+![Näyttökuva 2025-04-15 191611](https://github.com/user-attachments/assets/815331e1-79cb-4a21-93a4-a0df3c3ffaba)
+
+
+### Lähteet
+https://terokarvinen.com/tunkeutumistestaus/
+https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/
+https://terokarvinen.com/2023/fuffme-web-fuzzing-target-debian/
+https://github.com/ffuf/ffuf
+https://github.com/anha2/Tunkeutumistestaus/blob/main/h3.md
+
