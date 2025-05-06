@@ -8,6 +8,8 @@
 - Tekoäly, joten luo automaattisesti uusia sääntöjä
 - Tehokkaita jopa matalilla perusarvoilla
 - Kevyt ja reaaliaikainen ratkaisu
+
+
   Silmäilty ja käytetty tekoälyä tiivistelmään.
 
 ### a) HTB Dancing. Ratkaise HackTheBox.com: Starting Point: Tier 0: Dancing
