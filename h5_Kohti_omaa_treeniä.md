@@ -30,4 +30,17 @@ Tehtävä epäonnistui kahdesta syystä itseltäni. Syy 1 seurasin Hack the boxi
 
 Tier 1, ensimmäinen tehtäväpaketti kuitenkin liittyi SQL injectioihin. Saman tasoisia kysymyksiä kuin ylemmässä tehtävässä, vaikeammat kysymykset olivat kuitenkin task 4, task 10 ja stf
 ![Uploading Näyttökuva 2025-05-06 232350.png…]()
-![Näyttökuva 2025-05-06 233803](https://github.com/user-attachments/assets/64034b0b-f908-47cd-8887-37a7376eabaf)
+
+![Näyttökuva 2025-05-07 011721](https://github.com/user-attachments/assets/6863d299-6e3c-482d-af51-84671a3187e2)
+
+
+### Lähteet
+https://hacklido.com/blog/78-hackthebox-starting-point-tier-0-machine-dancing-walkthrough
+https://forum.hackthebox.com/t/i-cant-ping-any-of-the-machines/584
+https://www.youtube.com/watch?v=Loxy0kqWKmI&list=PLHUKi1UlEgOINz5PLYb9yu7evQZ_5MQ21&index=5
+https://www.youtube.com/watch?v=vLsoXjwKmrc
+https://medium.com/rakulee/hack-the-box-starting-point-appointment-solution-8af3caf6ff6d
+https://tenocijam.hashnode.dev/htb-appointment-walkthrough
+https://owasp.org/Top10/
+https://terokarvinen.com/tunkeutumistestaus/
+https://terokarvinen.com/review-article/
