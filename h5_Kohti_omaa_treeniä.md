@@ -21,9 +21,10 @@ Suurin osa tehtävistä oli helppoja kuten "Mitä vm tarkoittaa?"
 ![Näyttökuva 2025-05-06 221936](https://github.com/user-attachments/assets/eff193e2-54d2-4aad-9959-23841ce33f3c)
 
 Kesti hetken tajuta, että pwnbox avaa uuden ikkunan, jossa maali on olemmassa. Tämän takia pingaus ei aluksi onnistunut.
+![Näyttökuva 2025-05-06 232350](https://github.com/user-attachments/assets/a3a4185d-2047-4f02-8c10-c9c172105721)
 ![Näyttökuva 2025-05-06 222748](https://github.com/user-attachments/assets/70500e16-0ee8-44d9-be37-2b145d4b0ef2)
 ![Näyttökuva 2025-05-06 230320](https://github.com/user-attachments/assets/c41bee1a-2664-4a6f-8e49-81b1f7ed6f2f)
-![Näyttökuva 2025-05-06 232350](https://github.com/user-attachments/assets/a3a4185d-2047-4f02-8c10-c9c172105721)
+
 
 ![Näyttökuva 2025-05-06 230439](https://github.com/user-attachments/assets/7289f53c-9f5a-44c1-b49a-b4ee97e587a7)
 
