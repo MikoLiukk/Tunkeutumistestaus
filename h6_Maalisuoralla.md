@@ -1,7 +1,7 @@
 # H6 Maalisuoralla
 
 ## x) Lue & Tiivistä
-- Deviant Ollam. The Crosswalk Button Hack News Story
+- Deviant Ollam. The Crosswalk Button Hack News Story (https://www.youtube.com/watch?v=R8GOLiKIA1k)
   - Hakkerit pääsivät käsiksi suojateiden puheohjattuihin painikkeisiin Palo Altossa, Menlo Parkissa ja Redwood Cityssä.
   - Laiteet toistivat tekoälyn tuottamia viestejä, joissa matkittiin Elon Muskia ja Mark Zuckerbergia.
   - Viestit olivat humoristisia.
@@ -18,7 +18,7 @@ Kalilla tulevat lähes kaikki tarvittavat työkalut.
 - Ei lipunryöstön muistiinpanoja
 - Ei tekoälyä
 
-## b) Oma korkki. Demonstroi tunkeutumista itse valitsemallasi luvallisella maalilla.
+## b) Oma korkki. Demonstroi tunkeutumista itse valitsemallasi luvallisella maalilla.(https://app.hackthebox.com/starting-point)
 Valitsin Hack the boxin viimeviikolla tekemättä jäänneen tehtäväni, koska tein väärän.
 
 Tehtävä oli helppo.
@@ -27,3 +27,7 @@ Tehtävä oli helppo.
 
 
 ### Lähteet
+https://www.youtube.com/watch?v=R8GOLiKIA1k
+https://medium.com/rakulee/hack-the-box-starting-point-responder-solution-d0fa2ea77a56
+https://app.hackthebox.com/starting-point
+https://terokarvinen.com/tunkeutumistestaus/
